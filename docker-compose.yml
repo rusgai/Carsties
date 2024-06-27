@@ -1,0 +1,17 @@
+services:
+  pg-db:
+    container_name: pg-container
+    image: postgres:14-alpine
+    restart: "always"
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=19851982
+      - POSTGRES_USER=rusgai
+      - POSTGRES_DB=auction_db
+    volumes:
+      - pgdata:/var/lib/postgesql/data
+
+volumes:
+  pgdata:
+    driver: local

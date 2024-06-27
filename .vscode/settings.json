@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "auction-gev",
+            "database": "auction_db",
+            "username": "rusgai",
+            "password": "19851982"
+        }
+    ]
+}
